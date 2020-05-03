@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8"></meta>
+        <title>Web控制台</title>
+        <script src="https://cdn.bootcss.com/sockjs-client/1.4.0/sockjs.min.js"></script>
+        <script src="https://cdn.bootcss.com/stomp.js/2.3.3/stomp.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="console.js"></script>
+        <style type="text/css">body { font-family: "Microsoft YaHei" ;} .span-tv{padding-right: 12px } #console p {padding: 0px; margin: 0px;}</style></head>
+    
+    <body>
+        <div style="background-color:#AAA; padding: 5px; border-bottom: 1px solid  #333">
+            <input type="text" id="word" style="width: 100px"></input>
+            <button onclick="sendMessage()">发送消息</button>
+            <button onclick="connect()">连接</button>
+            <button onclick="disconnect()">断开</button>
+            <button onclick="clearConsole()">清空内容</button>
+        </div>
+        <div id="console" style="padding: 5px; font-size: 10px">
+        </div>
+    </body>
+
+</html>
